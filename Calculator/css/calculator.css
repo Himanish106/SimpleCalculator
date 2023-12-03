@@ -1,0 +1,78 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ######################### UTILITY CLASS ##################################### */
+
+.calculator .button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.my-button {
+  width: 20%;
+  height: 50%;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  font-size: 2rem;
+}
+.my-button:hover {
+  background-color: #c7c4c4;
+}
+/* ############################################################################   */
+.calculator {
+  display: flex;
+  background-color: #000000;
+  width: 375px;
+  height: 475px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.calculator .calculator-elements {
+  width: 95%;
+  height: 95%;
+  margin: 1.2rem;
+}
+
+.calculator-elements .input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.calculator-elements .input-box input[type="text"] {
+  order: 2;
+  height: 50%;
+  outline: none;
+  width: 65%;
+  font-size: 3rem;
+}
+
+.calculator-elements .set0 {
+  width: 30%;
+  height: 50%;
+  background-color: #eeeeee;
+  font-size: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.calculator-elements .set0:hover {
+  background-color: #c7c4c4;
+}
